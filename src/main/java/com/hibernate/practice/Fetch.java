@@ -23,10 +23,16 @@ public class Fetch {
 	  	
 
 	  	obj1 = session.get(Student.class, 2);
+//	  	System.out.println(obj1);
+	  	System.out.println(obj1.getName());
+	  	
 
+//	  	obj1 = session.load(Student.class, 2);
+//	  	System.out.println(obj1);
+//	  	System.out.println(obj1.getName());
+	  	
 	  	tx.commit();
 		
-	  	System.out.println(obj1.getName());
 
 		
 		

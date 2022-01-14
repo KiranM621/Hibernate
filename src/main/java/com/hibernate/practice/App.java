@@ -16,10 +16,10 @@ public class App
     	name.setM_name("Ravishankar");
     	name.setL_name("Mishra");
 
-    	Laptop lap1 = new Laptop();
-
-    	lap1.setLid(1);
-    	lap1.setName("Dell");
+//    	Laptop lap1 = new Laptop();
+//
+//    	lap1.setLid(1);
+//    	lap1.setName("Dell");
     	
     	
     	Student dep1 = new Student();
@@ -27,9 +27,13 @@ public class App
     	dep1.setDep_name("Finance");
     	dep1.setLocation("Pune");
     	dep1.setName(name);
-    	dep1.getLaptop().add(lap1);
+//    	dep1.getLaptop().add(lap1);
     	
-    	
+    	Laptop lap1 = new Laptop();
+
+    	lap1.setLid(1);
+    	lap1.setName("Dell");
+    	lap1.setStudent(dep1);
     	
     	//configures the config file created for databases
     	Configuration config = new Configuration().configure().addAnnotatedClass(Student.class).addAnnotatedClass(Laptop.class);
